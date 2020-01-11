@@ -1,0 +1,14 @@
+truffle console
+
+
+AtlasToken.deployed().then(t => token = t)
+
+// Tokenomics
+token.totalSupply().then(s => s.toNumber())
+token.balanceOf("0xcD262A92893d452E81b1f6ab69922177E35102E8").then(b => b.toNumber())
+token.transfer("0xcD262A92893d452E81b1f6ab69922177E35102E8", 10000).accounts[0]).then(b => b.toNumber())
+
+// Document interfaces
+token.addDoc("teszxczxctf", "0xcF262A9289dd452E81b1f6ab69922177E35102E8").then(b => b)
+token.getDoc("teszxczxctf").then(b => b)
+token.getDocCount().then(b => b)
